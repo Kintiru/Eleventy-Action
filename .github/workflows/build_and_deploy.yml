@@ -32,8 +32,8 @@ jobs:
 
       - name: Install node and npm
         uses: actions/setup-node@v3
-          with:
-          node-version: 16
+        with:
+          node-version: 18
 
       - name: Build Site
         run: npx @11ty/eleventy --output="_site${{ steps.pages.outputs.base_path }}"
